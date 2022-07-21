@@ -21,7 +21,6 @@ app.MapGet("/hello", () => hello());
 
 
 app.MapGet("/blinky", () => ascii("blinky")); 
-app.MapGet("/dwight", () => ascii("dwight")); 
 app.MapGet("/tnt", () => ascii("tnt")); 
 app.MapGet("/mtv", () => ascii("mtv")); 
 app.MapGet("/azure", () => ascii("azure")); 
