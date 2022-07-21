@@ -16,7 +16,6 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-app.MapGet("/boxboat", () => ascii("boxboat")); 
 app.MapGet("/blinky", () => ascii("blinky")); 
 app.MapGet("/dwight", () => ascii("dwight")); 
 app.MapGet("/tnt", () => ascii("tnt")); 
