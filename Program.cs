@@ -16,7 +16,10 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-app.MapGet("/boxboat", () => ascii("boxboat")); 
+// A simple hello
+app.MapGet("/hello", () => hello());
+
+
 app.MapGet("/blinky", () => ascii("blinky")); 
 app.MapGet("/dwight", () => ascii("dwight")); 
 app.MapGet("/tnt", () => ascii("tnt")); 
@@ -30,6 +33,11 @@ app.MapGet("/helm", () => ascii("helm"));
 app.MapGet("/tux", () => ascii("tux"));
 
 app.Run();
+
+string hello() {
+  string message = "Hello World!";
+  return message;
+}
 
 string ascii(string file) {
     string text = "";
