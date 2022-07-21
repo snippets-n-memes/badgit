@@ -35,7 +35,7 @@ app.MapGet("/tux", () => ascii("tux"));
 app.Run();
 
 string hello() {
-  string message = "Hello World!";
+  string message = "Hello World! Goodbye too!";
   return message;
 }
 
