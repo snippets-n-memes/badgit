@@ -17,8 +17,14 @@ jobs:
           # The optional `${author}` will be replaced with the username of the pull request
           conflict_comment: |
             :wave: Hi, @${author}, you suck.
-      - name: weekly-pull-requests-closure
-        uses: kyslik/close-pull-requests-based-on-label@v1.0.0
-        env:
-          LABEL: "nEeDs tO lEaRn giT"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+#       - name: weekly-pull-requests-closure
+#         uses: kyslik/close-pull-requests-based-on-label@v1.0.0
+#         env:
+#           LABEL: "nEeDs tO lEaRn giT"
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Close Pull
+        uses: peter-evans/close-pull@v2.0.0
+        with:
+          comment: ":wave: Hi, @${author}, don't wipe your hard drive."
+          delete-branch: true
