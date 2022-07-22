@@ -2,8 +2,6 @@ name: Auto Label Conflicts
 on:
 
   pull_request:
-    types:
-      - opened
     branches:
       - main
 
