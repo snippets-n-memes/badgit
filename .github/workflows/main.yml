@@ -2,8 +2,7 @@ name: Auto Label Conflicts
 on:
 
   pull_request:
-    branches:
-      - main
+    types: [opened]
 
 jobs:
   auto-label:
