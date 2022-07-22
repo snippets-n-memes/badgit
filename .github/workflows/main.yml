@@ -1,6 +1,5 @@
 name: Auto Label Conflicts
-on:
-  pull_request:
+on: [pull_request]
 
 jobs:
   auto-label:
