@@ -9,7 +9,7 @@ jobs:
   auto-label:
     runs-on: ubuntu-latest
     steps:
-      - uses: prince-chrismc/label-merge-conflicts-action@v2
+      - uses: prince-chrismc/label-merge-conflicts-action@v1.2.5
         with:
           conflict_label_name: "nEeDs tO lEaRn giT"
           github_token: ${{ github.token }}
