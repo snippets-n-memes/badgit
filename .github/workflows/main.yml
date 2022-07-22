@@ -1,9 +1,11 @@
 name: Auto Label Conflicts
 on:
-  push:
-    branches: [main]
+
   pull_request:
-    branches: [main]
+    types:
+      - opened
+    branches:
+      - main
 
 jobs:
   auto-label:
