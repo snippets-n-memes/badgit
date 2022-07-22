@@ -27,5 +27,5 @@ jobs:
         uses: peter-evans/close-pull@v2.0.0
         with:
           comment: |
-            :wave: Hi, @${author}, don't wipe your hard drive.
+            :wave: Hi, @${author}, better not wipe your hard drive.
           delete-branch: true
